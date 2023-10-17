@@ -222,15 +222,185 @@
 //  console.log(arr7);
 
 
-let arr1 = ["Milk", "Bread", "Apples" , "banana" , "Mango"];
+// let arr1 = ["Milk", "Bread", "Apples" , "banana" , "Mango"];
 
 // arr1.splice(0 , 1 , "Bananas" , "Eggs")
-console.log(arr1.indexOf("Apples"));
+// console.log(arr1.indexOf("Apples"));
 
-let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
-names.sort();
-console.log(names);
-names.reverse();
-console.log(names);
+// let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
+// names.sort();
+// console.log(names);
+// names.reverse();
+// console.log(names);
 
 
+// let weight  = +prompt("Enter your weight in kg:");
+// let height  = +prompt("Enter your height in Feet:");
+// let heightInMeter = height * 0.304;
+// let BMI = weight / heightInMeter**2;
+// console.log(BMI)
+
+
+// let arrOfArrays2 = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+
+// console.log(arrOfArrays2[0][2]);
+// console.log(arrOfArrays2[2][2]);
+// console.log(arrOfArrays2[1][0]);
+// console.log(arrOfArrays2[2][1]);
+// let arrOfArrays3 = [
+//   [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+//   ],
+//   [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+//   ],
+//   [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+//   ],
+// ];
+
+
+
+// arrOfArrays3[1][1][1] = 11
+
+// console.log(typeof arrOfArrays3)
+// let arr = [1,2,3]
+// let newArray = [arr ,arr ,arr]
+
+// let dog = {
+//   dogName: "tommy",
+//   weight: 2.4,
+//   color: "brown",
+//   breed: "chihuahua",
+//   age: 3,
+//   burglarBiter: true,
+
+// };
+
+// console.log(dog["breed"]);
+// console.log(dog.dogName);
+
+// dog.forSale = true;
+// console.log(dog);
+
+// dog.age = 13;
+//  console.log(dog)
+
+
+// let company = {
+//   companyName: "Healthy Candy",
+//   activity: "food manufacturing",
+//   address: {
+//     street: "2nd street",
+//     number: "123",
+//     zipcode: "33116",
+//     city: "Miami",
+//     state: "Florida",
+//   },
+//   yearOfEstablishment: 2021,
+// };
+// company.zubair.city = "karachi"
+
+
+// let company1 = {
+//   companyName: "Healthy Candy",
+//   activities: [
+//     "food manufacturing",
+//     "improving kids' health",
+//     "manufacturing toys",
+//   ],
+//   address: {
+//     street: "2nd street",
+//     number: "123",
+//     zipcode: "33116",
+//     city: "Miami",
+//     state: "Florida",
+//   },
+//   yearOfEstablishment: 2021,
+// };
+
+// console.log(company1.activities[1]);
+// let addresses = [
+//   {
+//     street: "2nd street",
+//     number: "123",
+//     zipcode: "33116",
+//     city: "Miami",
+//     state: "Florida",
+//   },
+//   {
+//     street: "1st West avenue",
+//     number: "5",
+//     zipcode: "75001",
+//     city: "Addison",
+//     state: "Texas",
+//   },
+// ];
+// console.log(addresses[1].number)
+
+
+// let company = {
+//   companyName: "Healthy Candy",
+//   activities: [
+//     "food manufacturing",
+//     "improving kids' health",
+//     "manufacturing toys",
+//   ],
+//   address: [
+//     {
+//       street: "2nd street",
+//       number: "123",
+//       zipcode: "33116",
+//       city: "Miami",
+//       state: "Florida",
+//     },
+//     {
+//       street: "1st West avenue",
+//       number: "5",
+//       zipcode: "75001",
+//       city: "Addison",
+//       state: "Texas",
+//     },
+//   ],
+//   yearOfEstablishment: 2021,
+// };
+// company.address[1].city = "karachi"
+// console.log(company);
+
+
+// let people = {
+//   friends: []
+// }
+// let friend1 = {
+//   firstName:"shahbaz",
+//   lastName:"Niaz",
+//   ID:12
+// }
+// let friend2 = {
+//   firstName: "hamza",
+//   lastName: "owais",
+//   ID: 13,
+// };
+// let friend3 = {
+//   firstName: "umar",
+//   lastName: "khan",
+//   ID: 14,
+// };
+
+// people.friends.push(friend1 , friend2 , friend3);
+// console.log(people);
+
+
+// const myArr1 = [1, 3, 5, 6, 8, 9, 15];
+// console.log(myArr1.indexOf(0));
+// console.log(myArr1.indexOf(3));
