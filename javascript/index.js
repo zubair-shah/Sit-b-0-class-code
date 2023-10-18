@@ -404,3 +404,59 @@
 // const myArr1 = [1, 3, 5, 6, 8, 9, 15];
 // console.log(myArr1.indexOf(0));
 // console.log(myArr1.indexOf(3));
+
+// const myArr3 = [3, 6, 8, 9, 3, 55, 553, 434];
+// myArr3.sort();
+// myArr3.length = 0;
+// console.log(myArr3);
+
+// let age = +prompt("enter your age")
+// let gender = prompt("enter your Gender");
+
+// if (age < 18) {
+//   console.log("We're very sorry, but you can't get in under 18");
+// } else if(gender === "female"){
+//     console.log("Female is not allowed ");
+// }
+// else {
+//   console.log("Welcome!");
+// }
+
+// let hobby = "dancing";
+// if (hobby == "coding") {
+//   console.log("** I love coding too! **");
+// } else {
+//   console.log("** Can you teach me that? **");
+// }
+
+// let a = false;
+// console.log(a)
+// if(a){
+//   console.log("hi")
+// }
+
+// if (!a) {
+//   console.log("Bi");
+// }
+
+// let age = 19;
+// let cost = 0;
+// let message;
+// if (age < 3) {
+//   cost = 0;
+//   message = "Access is free under three.";
+// } else if (age >= 3 && age < 12) {
+//   cost = 5;
+//   message = "With the child discount, the fee is 5 dollars";
+// } else if (age >= 12 || age < 14) {
+//   cost = 10;
+//   message = "A regular ticket costs 10 dollars.";
+// } else {
+//   cost = 7;
+//   message = "A ticket is 7 dollars.";
+// }
+// console.log(message);
+// console.log("Your Total cost " + cost);
+let age = 17;
+let access = age < 18 ? "denied" : age == 18 ? "strictly allowed" : "allowed";
+console.log(access);
