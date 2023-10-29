@@ -457,6 +457,188 @@
 // }
 // console.log(message);
 // console.log("Your Total cost " + cost);
-let age = 17;
-let access = age < 18 ? "denied" : age == 18 ? "strictly allowed" : "allowed";
-console.log(access);
+// let age = 17;
+// let access = age < 18 ? "denied" : age == 18 ? "strictly allowed" : "allowed";
+// console.log(access);
+
+let activity = "zubair";
+
+// if (activity === "Get up") {
+//   console.log("It is 6:30AM");
+// } else if (activity === "Breakfast") {
+//   console.log("It is 7:00AM");
+// } else if (activity === "Drive to work") {
+//   console.log("It is 8:00AM");
+// } else if (activity === "Lunch") {
+//   console.log("It is 12.00PM");
+// } else if (activity === "Drive home") {
+//   console.log("It is 5:00PM");
+// } else if (activity === "Dinner") {
+//   console.log("It is 6:30PM");
+// } 
+
+
+// switch (activity) {
+//   case "Get up":
+//     console.log("It is 6:30AM");
+//     break;
+//   case "Breakfast":
+//     console.log("It is 7:00AM");
+//     break;
+//   case "Drive to work":
+//     console.log("It is 8:00AM");
+//     break;
+//   case "Lunch":
+//     console.log("It is 12:00PM");
+//     break;
+//   case "Drive home":
+//     console.log("It is 5:00PM");
+//     break;
+//   case "Dinner":
+//     console.log("It is 6:30PM");
+//     break;
+//   default:
+//     console.log("i am default")
+//     // code to be executed when no cases match
+//     break;
+// }
+
+// const randomNumber = Math.floor(Math.random() * 6);
+// console.log(randomNumber)
+// let answer = "Something went wrong";
+// let question = prompt("Ask me anything");
+// switch (randomNumber) {
+//   case 0:
+//     answer = "It will work out";
+//     break;
+//   case 1:
+//     answer = "Maybe, maybe not";
+//     break;
+//   case 2:
+//     answer = "Probably not";
+//     break;
+//   case 3:
+//     answer = "Highly likely";
+//     break;
+//   default:
+//     answer = "I don't know about that";
+// }
+// let output = "You asked me " + question + ". I think that " + answer;
+// console.log(output);
+
+// const userNames = ["Mike", "John", "Larry"];
+// const userInput = "John";
+// let htmlOutput = "";
+// if (userNames.indexOf(userInput) > -1) {
+//  htmlOutput = "Welcome, that is a user";
+// } else {
+//  htmlOutput = "Denied, not a user ";
+// }
+// console.log(htmlOutput + ": " + userInput);
+
+// let val = 100;
+// let message =
+//   val > 100 ? `${val} was greater than 100` : `${val} was less than 100`;
+// let check = val % 2 ? `Odd` : `Even`;
+// check = `${val} is ${check}`; q q q
+// console.log(check);
+// let number = 10;
+
+// let loopStart  = true;
+// while (loopStart) {
+//   let max = 10;
+//   let randomNumber = Math.floor(Math.random() * max) + 1;
+//   console.log(randomNumber);
+//   let userInput = +prompt("Enter a number between 1 to 10");
+//   if (userInput === randomNumber) {
+//     console.log("congrats");
+//     loopStart = false;
+//   } else {
+//     console.log("try again");
+//      loopStart = false;
+//   }
+// }
+
+// let number = 0;
+// let step = 5
+// do {
+//   console.log("hello", number)
+//   number += step;
+// } while (number < 100);
+
+
+
+// for (let i = 0; i < 10; i++) {
+
+//   console.log(i);
+
+// }
+
+
+// let myWork = [];
+// for (let i = 1; i <= 10; i++) {
+//   let checkNum = i % 2;
+//   let obj = {
+//     name: `Lesson ${i}`,
+//     status: checkNum === 1 ? true : false,
+//   }
+//   myWork.push(obj)
+// }
+
+// console.log(myWork)
+
+
+// let arrOfArrays = [];
+
+// for (let i = 0; i < 3; i++) {
+//  //i = 3
+//   arrOfArrays.push([]);
+//   for (let j = 0; j < 2; j++) {
+//       //j=2
+//     arrOfArrays[i].push(j);
+
+//   }
+
+
+// }
+// console.table(arrOfArrays);
+
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let i = 0; i < names.length; i++) {
+//   console.log(names[i]);
+// }
+
+
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let i = 0; i < names.length; i++) {
+//   names[i] = "hello " + names[i];
+// }
+
+
+// console.log(names);
+
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let i = 0; i < names.length; i++) {
+//   if (names[i].startsWith("M")) {
+//      names[i] = null;
+//     continue;
+//   }
+//   names[i] = "hello " + names[i];
+// }
+// console.log(names);
+
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let name of names) {
+//   console.log(name);
+// }
+
+
+let car = {
+  model: "Golf",
+  make: "Volkswagen",
+  year: 1999,
+  color: "black",
+};
+for (let prop in car) {
+    console.log(prop)
+}
