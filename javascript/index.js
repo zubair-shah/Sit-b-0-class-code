@@ -633,12 +633,112 @@ let activity = "zubair";
 // }
 
 
-let car = {
-  model: "Golf",
-  make: "Volkswagen",
-  year: 1999,
-  color: "black",
-};
-for (let prop in car) {
-    console.log(prop)
+// let car = {
+//   model: "Golf",
+//   make: "Volkswagen",
+//   year: 1999,
+//   color: "black",
+// };
+// for (let prop in car) {
+//     console.log(car[prop])
+// }
+
+
+
+// let i = 0;
+// do{
+//   console.log(i)
+//   i++;
+//   if(i===4){
+//     break;
+//   }
+// } while(i<10)
+// let output = '';
+// let skipNumber = 4
+// for (let i = 0; i < 10; i++) {
+    
+//   if(i === skipNumber){
+//       // console.log(i);
+//     continue;
+//   }
+
+//   if (i === 4) {
+//     continue
+//     break;
+//   }
+
+// console.log(i);
+// }
+// let cars = [
+//   {
+//     model: "Golf",
+//     make: "Volkswagen",
+//     year: 1999,
+//     color: "black",
+//   },
+//   {
+//     model: "Picanto",
+//     make: "Kia",
+//     year: 2020,
+//     color: "red",
+//   },
+//   {
+//     model: "Peugeot",
+//     make: "208",
+//     year: 2021,
+//     color: "black",
+//   },
+//   {
+//     model: "Fiat",
+//     make: "Punto",
+//     year: 2020,
+//     color: "black",
+//   },
+// ];
+// for (let car of cars) {
+//   if (car.color !== "black") {
+//     continue;
+//   }
+//   if (car.year >= 2020) {
+//     console.log("we could get this one:", car);
+//   }
+// }
+
+
+// let output = "";
+// let skipThis = 7;
+// for (let i = 0; i < 10; i++) {
+//   if (i === skipThis) {
+//     continue;
+//   }
+//   output += i;
+// }
+// console.log(output);
+
+
+// const grid = [];
+// const cells = 64;
+// let counter = 0;
+// let row;
+// for (let x = 0; x < cells + 1; x++) {
+//   if (counter % 8 == 0) {
+//     if (row != undefined) {
+//       grid.push(row);
+//     }
+//     row = [];
+//   }
+//   counter++;
+//   let temp = counter;
+//   row.push(temp);
+// }
+// console.table(grid);
+
+
+
+let step = 3;
+for (let i = 0; i < 1000; i += step) {
+  if (i > 10) {
+    break;
+  }
+  console.log(i);
 }
