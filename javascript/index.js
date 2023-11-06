@@ -461,7 +461,7 @@
 // let access = age < 18 ? "denied" : age == 18 ? "strictly allowed" : "allowed";
 // console.log(access);
 
-let activity = "zubair";
+// let activity = "zubair";
 
 // if (activity === "Get up") {
 //   console.log("It is 6:30AM");
@@ -735,10 +735,58 @@ let activity = "zubair";
 
 
 
-let step = 3;
-for (let i = 0; i < 1000; i += step) {
-  if (i > 10) {
-    break;
-  }
-  console.log(i);
-}
+// let step = 3;
+// for (let i = 0; i < 1000; i += step) {
+//   if (i > 10) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+
+// const myArray = [1, 5, 7];
+// for (el in myArray) {
+//   console.log(el)
+//   console.log(Number(el));
+//   el = Number(el) + 5;
+//   console.log(el);
+// }
+// console.log(myArray);
+
+
+// function sayHello() {    // function bana rahe hen
+//   let you = prompt("What's your name? ");
+//   console.log("Hello", you + "!");
+// }
+
+// sayHello();     // function call horaha he 
+// function tester(x = 2, y = 2) {   // parameter
+
+//     return x+y;
+
+//     console.log("hello")   //not print
+// }
+// console.log(tester());    // argument
+//   let arr  = ["Hi" , "Hello" , "Bye"]
+// function selectRandomWordsAndShow() {
+//  let name = prompt("Enter your name")
+//  let randomeNumber = Math.floor(Math.random() * 3)
+//  console.log(name, arr[randomeNumber]);
+
+// }
+// selectRandomWordsAndShow()
+
+// let doingArrowStuff = (x) => console.log(x);
+
+// doingArrowStuff("zubair");
+
+// let addTwoNumbers = (x, y) => {
+//  return x + y
+// };
+
+// console.log(addTwoNumbers(7 , 3))
+
+// function someFunction(param1, param2 , ...param3) {
+//   console.log(param1, param2, param3);
+// }
+// someFunction("hi", "there!", "How are you?" , "What do you think" , "what do you think");
