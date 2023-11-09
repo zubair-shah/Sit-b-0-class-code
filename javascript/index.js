@@ -790,3 +790,133 @@
 //   console.log(param1, param2, param3);
 // }
 // someFunction("hi", "there!", "How are you?" , "What do you think" , "what do you think");
+// function addTwoNumbers(x, y) {
+//   return x + y;
+// }
+
+// let resultsArr = [];
+// for (let i = 0; i < 10; i++) {
+
+//   let result = addTwoNumbers(i, 2 * i);
+//   resultsArr.push(result);
+
+// }
+// console.log(resultsArr);
+
+// function testAvailability(x) {
+
+//   console.log("Available here:", x);
+
+// }
+// testAvailability("Hi!");
+
+// console.log("Not available here:", x);
+
+// function testAvailability() {
+//   let y = "I'll return";
+//   console.log("Available here:", y);
+//   return y;
+
+
+
+
+// } 
+// let z = testAvailability();
+
+// console.log("Outside the function:", z);
+
+// console.log("Not available here:", y);
+
+// let , const    // block scope
+// var   // functional scope
+// function doingStuff() {
+
+
+
+
+//   console.log(x);
+
+
+
+// if (true) {
+//   var x = "local";
+// }
+  
+// }
+// doingStuff();
+
+// function doingStuff() {
+//   if (true) {
+//     let x = "local";
+//   }
+// }
+// doingStuff();
+
+// let globalVar = "Accessible everywhere!";
+
+// console.log("Outside function:", globalVar);
+
+// function creatingNewScope(x) {
+
+//  console.log("Access to global vars inside function." , globalVar)
+
+// }
+
+// creatingNewScope("some parameter");
+
+
+// console.log("Still available:", globalVar);
+
+// let val = "1000";
+
+// (function () {
+//   let val = "100"; // local scope variable
+//   console.log(val);
+// })();
+
+// let result = (function () {
+//   let val = "Laurence";
+//   return val;
+// })();
+// console.log(result);
+// console.log(val);
+
+// (function (val) {
+//   console.log(`My name is ${val}`);
+// })("Laurence");
+
+
+
+// console.log(a)
+
+
+
+
+
+
+// function doOuterFunctionStuff(nr) {
+//   console.log("Outer function");
+
+//   function doInnerFunctionStuff(x) {
+//     console.log(x + 7);
+//     console.log("I can access outer variables:", nr);
+//   }
+//     doInnerFunctionStuff(4);
+// }
+// doOuterFunctionStuff(2);
+
+
+let functionVariable = function () {
+  console.log("Not so secret though.");
+};
+
+function doFlexibleStuff(executeStuff) {
+  executeStuff();
+  console.log("Inside doFlexibleStuffFunction.");
+}
+
+doFlexibleStuff(functionVariable);
+
+
+
+
