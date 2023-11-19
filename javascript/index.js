@@ -906,17 +906,101 @@
 // doOuterFunctionStuff(2);
 
 
-let functionVariable = function () {
-  console.log("Not so secret though.");
-};
+// let functionVariable = function () {
+//   console.log("Not so secret though.");
+// };
 
-function doFlexibleStuff(executeStuff) {
-  executeStuff();
-  console.log("Inside doFlexibleStuffFunction.");
-}
+// function doFlexibleStuff(executeStuff) {
+//   executeStuff();
+//   console.log("Inside doFlexibleStuffFunction.");
+// }
 
-doFlexibleStuff(functionVariable);
+// doFlexibleStuff(functionVariable);
+
+// function calcFactorial(nr) {     //factorial function
+//   console.log(nr);
+//   if (nr === 1) {
+//     return 1;
+//   } else {
+//     return nr * calcFactorial(--nr); //2
+//   }
+// }
+// console.log(calcFactorial(6));
+
+// let str_int = "6";
+// let int_int = parseInt(str_int);
+// console.log("Type of ", int_int, "is", typeof int_int);
+
+// let str_float = "7.6";
+// let int_float = parseFloat(str_float);
+// console.log("Type of", int_float, "is", typeof int_float);
 
 
+// let arr = ["grapefruit", 4, "hello", 5.6, true];
+
+// arr.forEach((element, index) => {
+// //  console.log("Printing stuff:", element, "on array position:" , index);
+//  return element;
+// });
+
+// let arr = ["Ahmed", "Zubair", "anas", "Murtaza", "Hanzala"];
+
+// let filterArr = arr.filter((element, index) =>{
+//   return element.includes('n')
+// });
+// console.log(filterArr);
+
+// let arr = ["grapefruit", 4, "hello", 5.6, true];
+
+// let newArray = arr.copyWithin(0, 2, 4);
+// console.log(newArray)
 
 
+// let arr = [1, 2, 3, 4];
+
+// let mapped_arr = arr.map((x , ind) => x + 1);
+
+// console.log(mapped_arr);
+
+
+// let bb = ["so", "bye", "bye", "love"];
+// console.log(bb.indexOf("bye"));
+
+// let arr = ["Laurence", "Mike", "Larry", "Kim", "Joanne", "Laurence", "Mike" ];
+
+// const arr2 = arr.filter((value, index, array) => {
+//   console.log(value, index, array.indexOf(value));
+//   return array.indexOf(value) === index;
+// });
+// console.log(arr2);
+
+
+// let result = "Hello,JavaScript,you,love";
+// let arr_result = result.split(",");
+// console.log(arr_result);
+
+// let letters = ["a", "b", "c"];
+// let x = letters.join("");
+// console.log(x);
+
+let poem = "Roses are red, violets are blue, if I can do JS, the"
+let index_re = poem.indexOf("re");
+console.log(index_re);
+
+let pos1 = poem.charAt(10);
+console.log(pos1);  
+
+let str = "Create a substring";
+let substr1 = str.slice(5);
+let substr2 = str.slice(0, 3);
+console.log("1:", substr1);
+console.log("2:", substr2);
+
+let caps = "hi how are you?";
+  let newArray = caps.split(" ");
+  for(let i=0 ; i < newArray.length; i++) {
+    console.log(newArray[i]);
+    newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray[i].slice(1);
+  }
+let newString = newArray.join(" ")
+console.log(newString);
