@@ -1061,10 +1061,20 @@ console.log(pos1);
 // console.log(d.toDateString());
 // console.log(d.toTimeString());
 
+// const arr = ["Hi","world","hello","Hii","hi","hi World","Hi"]
+// const arr2 = arr.filter((element,index)=>{
+//  const ele2 = element.substring(0, 2);
+//  return (ele2 == "hi");
+// });
+// console.log(arr2);
 
-const arr = ["Hi","world","hello","Hii","hi","hi World","Hi"]
-const arr2 = arr.filter((element,index)=>{
- const ele2 = element.substring(0, 2);
- return (ele2 == "hi");
-});
-console.log(arr2);
+// console.log(chrome.csi)
+// console.dir(navigator);
+console.dir(document);
+
+let element = document.querySelectorAll('.output')
+console.log(element);
+element[0].textContent = "Hello world"
+element[0].classList.add("red");
+element[0].style.backgroundColor = "Yellow";
+console.log(element);
