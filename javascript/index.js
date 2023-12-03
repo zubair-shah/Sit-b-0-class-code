@@ -1103,12 +1103,25 @@ let element = document.querySelector(".output");
 //  document.getElementById("shape").classList.toggle("hide")
 //  }
 
-//  function changeAttr(){
-//  let el = document.getElementById("shape");
-//  el.setAttribute("style", "width:300px;height:200px;background-color:red;border:1px solid grey");
-//  el.setAttribute("id", "new");
-//  el.setAttribute("class", "circle");
-
+//  function changeAttr() {
+//    console.log("event ", this);
+//    let el = document.getElementById("shape");
+//    el.setAttribute(
+//      "style",
+//      "width:300px;height:200px;background-color:red;border:1px solid grey"
+//    );
+//    el.setAttribute("class", "circle");
 //  }
+//  document.getElementById("btn").addEventListener("click", changeAttr);
 
-
+// let el = document.createElement("p");
+// el.innerText = Math.floor(Math.random() * 100);
+// document.body.appendChild(el);
+document.getElementById("addNew").addEventListener("click", addList);
+function addList() {
+  let inputValue = document.getElementById("addItem").value;
+  let newElement = document.createElement("li");
+  newElement.innerText = inputValue;
+  let ol = document.getElementById("sList");
+  ol.appendChild(newElement);
+}
