@@ -1070,11 +1070,45 @@ console.log(pos1);
 
 // console.log(chrome.csi)
 // console.dir(navigator);
-console.dir(document);
+// console.dir(document);
 
-let element = document.querySelectorAll('.output')
-console.log(element);
-element[0].textContent = "Hello world"
-element[0].classList.add("red");
-element[0].style.backgroundColor = "Yellow";
-console.log(element);
+// let element = document.querySelectorAll('.output')
+// console.log(element);
+// element[0].textContent = "Hello world"
+// element[0].classList.add("red");
+// element[0].style.backgroundColor = "Yellow";
+// console.log(element);
+
+
+let element = document.querySelector(".output");
+// console.log(element.innerText)
+// console.log(element);
+// let ele2 = document.getElementById("ab");
+// ele2.innerText = element;
+// console.log(ele2);
+
+// element.onclick = function () {alert("Hello")};
+// function reveal(el) {
+//   console.log(el.innerText);
+// }
+
+// function rainbowify() {
+//   let divs = document.getElementsByTagName("div");
+//   for (let i = 0; i < divs.length; i++) {
+//     divs[i].style.backgroundColor = divs[i].id;
+//   }
+// }
+
+// function changeVisibility(){
+//  document.getElementById("shape").classList.toggle("hide")
+//  }
+
+//  function changeAttr(){
+//  let el = document.getElementById("shape");
+//  el.setAttribute("style", "width:300px;height:200px;background-color:red;border:1px solid grey");
+//  el.setAttribute("id", "new");
+//  el.setAttribute("class", "circle");
+
+//  }
+
+
