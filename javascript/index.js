@@ -1117,11 +1117,35 @@ let element = document.querySelector(".output");
 // let el = document.createElement("p");
 // el.innerText = Math.floor(Math.random() * 100);
 // document.body.appendChild(el);
-document.getElementById("addNew").addEventListener("click", addList);
-function addList() {
-  let inputValue = document.getElementById("addItem").value;
-  let newElement = document.createElement("li");
-  newElement.innerText = inputValue;
-  let ol = document.getElementById("sList");
-  ol.appendChild(newElement);
-}
+// document.getElementById("addNew").addEventListener("click", addList);
+// function addList() {
+//   let inputValue = document.getElementById("addItem").value;
+//   let newElement = document.createElement("li");
+//   newElement.innerText = inputValue;
+//   let ol = document.getElementById("sList");
+//   ol.appendChild(newElement);
+// }
+
+
+// window.onload = function () {
+//   // whatever needs to happen after the page loads goes here
+//   console.log("loading");
+
+// };
+// let text = "10";
+// console.log(text.match(/[abcd]/ig));
+
+// console.log(text.match(/javascript|nodejs|react/ig));
+// console.log(text.match(/[a-zA-Z0-9]/ig));
+
+// let text = "äé!";
+// console.log(text.match(/[a-zA-Z0-9]/i));
+
+// let text = "That's not the case.";
+// console.log(text.search(/Case/i));
+
+let emailPattern = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-])/g;
+let validEmail = "maaike_1234@email.com";
+let invalidEmail = "maaike@mail@.com";
+console.log(validEmail.match(emailPattern));
+console.log(invalidEmail.match(emailPattern));
