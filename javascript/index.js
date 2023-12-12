@@ -1126,6 +1126,17 @@ let element = document.querySelector(".output");
 //   ol.appendChild(newElement);
 // }
 
+//  function sendInfo() {
+//    let p = event.target.parentElement;
+//    console.log(p);
+
+//    message("Welcome " + p.firstname.value + " " + p.lastname.value);
+//  }
+
+//  function message(m) {
+//    document.getElementById("welcome").innerHTML = m;
+//  }
+
 
 // window.onload = function () {
 //   // whatever needs to happen after the page loads goes here
@@ -1144,8 +1155,80 @@ let element = document.querySelector(".output");
 // let text = "That's not the case.";
 // console.log(text.search(/Case/i));
 
-let emailPattern = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-])/g;
-let validEmail = "maaike_1234@email.com";
-let invalidEmail = "maaike@mail@.com";
-console.log(validEmail.match(emailPattern));
-console.log(invalidEmail.match(emailPattern));
+// let emailPattern = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-])/g;
+// let validEmail = "maaike_1234@email.com";
+// let invalidEmail = "maaike@mail@.com";
+// console.log(validEmail.match(emailPattern));
+// console.log(invalidEmail.match(emailPattern));
+
+// let val = 5;
+// val += adder();
+// val += adder();
+// val += adder();
+// console.log(val);
+
+// function adder() {
+//   let counter = val;
+//   for (let i = 0; i < val; i++) {
+//     counter++;
+//   }
+//   return counter;
+// }
+
+// function somethingVeryDangerous() {
+//   throw { message: "something verydangerous"};
+// }
+
+// try{
+//   somethingVeryDangerous();
+// }
+// catch(e){
+//   alert(e.message);
+// }
+
+// let message = "Hello storage!";
+
+// localStorage.setItem("example", message);
+// localStorage.setItem("example1", message);
+// localStorage.setItem("example2", message);
+
+// if (localStorage.getItem("example")) {
+//   localStorage.clear();
+//   // document.getElementById("stored").innerHTML = localStorage.getItem("example");
+// }
+function validate(){
+// your all validation here 
+}
+
+function myFunc(){
+  if(!validate){
+
+   return 
+  }
+  let input = document.getElementById("abc");
+  let data = {
+    name: input.value,
+    age: 50,
+    profession: "programmer",
+    languages: ["JavaScript", "C#", "Python"],
+    address: {
+      street: "Some street",
+      number: 123,
+      zipcode: "3850AA",
+      city: "Utrecht",
+      country: "The Netherlands",
+    },
+  };
+
+  localStorage.setItem("example", JSON.stringify(data));
+}
+
+function readData(){
+  
+if (localStorage.getItem("example")) {
+  console.log(localStorage.getItem("example"));
+  let getData = JSON.parse(localStorage.getItem("example"));
+  console.log(getData)
+  document.getElementById("stored").innerHTML = getData.name;
+}
+}

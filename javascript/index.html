@@ -48,19 +48,11 @@
 
       <input type="button" onclick="sendInfo()" value="Submit" />
     </form>
-    <script>
- function sendInfo() {
-   let p = event.target.parentElement;
-  console.log(p)
-
-   message("Welcome " + p.firstname.value + " " + p.lastname.value);
- }
-
-
- function message(m) {
-   document.getElementById("welcome").innerHTML = m;
- }
-    </script> -->
+  -->
+  <input type="text" id="abc">
+  <button onclick="myFunc()">submit</button>
+  <button onclick="readData()">Read Data</button>
+  <div id="stored"></div>
 
     <script src="./index.js"></script>
   </body>
