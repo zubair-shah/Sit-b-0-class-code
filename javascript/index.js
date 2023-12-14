@@ -1196,39 +1196,46 @@ let element = document.querySelector(".output");
 //   localStorage.clear();
 //   // document.getElementById("stored").innerHTML = localStorage.getItem("example");
 // }
-function validate(){
-// your all validation here 
-}
+// function validate(){
+// // your all validation here 
+// }
 
-function myFunc(){
-  if(!validate){
+// function myFunc(){
+//   if(!validate){
 
-   return 
-  }
-  let input = document.getElementById("abc");
-  let data = {
-    name: input.value,
-    age: 50,
-    profession: "programmer",
-    languages: ["JavaScript", "C#", "Python"],
-    address: {
-      street: "Some street",
-      number: 123,
-      zipcode: "3850AA",
-      city: "Utrecht",
-      country: "The Netherlands",
-    },
-  };
+//    return 
+//   }
+//   let input = document.getElementById("abc");
+//   let data = {
+//     name: input.value,
+//     age: 50,
+//     profession: "programmer",
+//     languages: ["JavaScript", "C#", "Python"],
+//     address: {
+//       street: "Some street",
+//       number: 123,
+//       zipcode: "3850AA",
+//       city: "Utrecht",
+//       country: "The Netherlands",
+//     },
+//   };
 
-  localStorage.setItem("example", JSON.stringify(data));
-}
+//   localStorage.setItem("example", JSON.stringify(data));
+// }
 
-function readData(){
+// function readData(){
   
-if (localStorage.getItem("example")) {
-  console.log(localStorage.getItem("example"));
-  let getData = JSON.parse(localStorage.getItem("example"));
-  console.log(getData)
-  document.getElementById("stored").innerHTML = getData.name;
-}
-}
+// if (localStorage.getItem("example")) {
+//   console.log(localStorage.getItem("example"));
+//   let getData = JSON.parse(localStorage.getItem("example"));
+//   console.log(getData)
+//   document.getElementById("stored").innerHTML = getData.name;
+// }
+// }
+
+
+// setTimeout(sayHello, 2000)
+// setInterval(sayHello, 2000)
+// function sayHello(){
+//   console.log('hello')
+// }

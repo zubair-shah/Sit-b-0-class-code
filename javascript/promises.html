@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+
+
+    <script>
+
+
+// let a = "Hello Ecma script"
+//  let promiseData = new Promise((resolved,rejext)=>{
+//      setTimeout(() => {
+//        a = "Hello world"
+//        resolved("done")
+//      }, 2000);
+//  })
+
+//  promiseData.then(()=>{
+//     alert(a)
+//  })
+    
+
+
+
+//promise 3 stages
+
+//3 task
+
+// ap mujhe promise karo ke kal 10am me mujhe call karooege
+
+// tomorrow at 10 am 
+// 1: pending
+
+// event time hogya to ya to ap karoge ya nhi matlab
+
+// 2: resolve -> yani apne fulfiled kardiya 
+// 3: reject -> yani apne call nhi kiya
+
+//promise use karne ke liye 2 tareka he constructor or 2sr object
+
+// to creat new object of promise use new keyword
+//executer
+
+const promise1 = new Promise( (resolve, reject) => {
+
+    let roll_no = []
+    // console.log(roll_no);
+    if(roll_no.length > 0){
+        resolve(roll_no);
+    }else{
+         reject(`error with communicate with database`)
+    }
+console.log('a')
+console.log('b')
+console.log('c')
+})
+console.log(promise1)
+
+promise1.then((roll) =>{
+    console.log(roll);
+    // return getBioData(roll[1]);
+}).catch((error) =>{
+     console.log(error);
+})
+
+// const getBioData = (indexdata) => {
+//     return new Promise( (resolve,reject) => {
+//         console.log(indexdata)
+//    setTimeout((indexdata)=>{
+//    let biodata = {
+//        name : 'zubair shah',
+//        age : 21,
+
+//    }
+//    if(indexdata === 3){
+//        resolve(`my roll no is ${biodata.name} and i am ${biodata.age} years old `)
+//    }
+//    reject("error getting data");
+
+//    },2000)
+//  })
+// }
+//promise -consuming-----------
+
+
+
+
+
+    </script>
+</body>
+</html>
